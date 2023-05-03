@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {"version":"v1",
 "config":{
     "visState":{
@@ -99,3 +100,107 @@
                                                     }
                                                     }
                                                 }
+=======
+{"version":"v1",
+"config":{
+    "visState":{
+        "filters":[],
+        "layers":[{
+            "id":"auphxib",
+            "type":"point",
+            "config":{
+                "dataId":"Housing Data",
+                "label":"point",
+                "color":[218,112,191],
+                "highlightColor":[252,242,26,255],
+                "columns":{"lat":"LATITUDE","lng":"LONGITUDE","altitude":null},
+                "isVisible":true,
+                "visConfig":{
+                    "showLegend":true,
+                    "radius":5,
+                    "fixedRadius":false,
+                    "opacity":0.8,
+                    "outline":false,
+                    "thickness":2,
+                    "strokeColor":null,
+                    "colorRange":{
+                        "name":"ColorBrewer RdYlGn-6",
+                        "type":"diverging",
+                        "category":"ColorBrewer",
+                        "colors":["#1a9850","#91cf60","#d9ef8b","#fee08b","#fc8d59","#d73027"],
+                        "reversed":true
+                    }
+                    ,"strokeColorRange":{
+                        "name":"Global Warming",
+                        "type":"sequential",
+                        "category":"Uber",
+                        "colors":["#5A1846","#900C3F","#C70039","#E3611C","#F1920E","#FFC300"]
+                        },
+                        "radiusRange":[0,50],
+                        "filled":true
+                    },
+                    "hidden":false,
+                    "textLabel":
+                    [
+                        {
+                            "field":null,
+                            "color":[255,255,255],
+                            "size":18,
+                            "offset":[0,0],
+                            "anchor":"start",
+                            "alignment":"center"
+                            }
+                            ]
+                            },
+                            "visualChannels":{
+                                "colorField":{
+                                    "name":"CO2 Emissions (2021)",
+                                    "type":"real"
+                                    },
+                                    "colorScale":"quantile",
+                                    "strokeColorField":null,
+                                    "strokeColorScale":"quantile",
+                                    "sizeField":null,
+                                    "sizeScale":"linear"
+                                    }
+                                    }
+                                    ],
+                                    "interactionConfig":{
+                                        "tooltip":{
+                                            "fieldsToShow":{
+                                                "Housing Data":[
+                                                    {"name":"Current SAP Score","format":null},
+                                                    {"name":"Potential SAP Score","format":null},
+                                                    {"name":"CO2 Emissions (2021)","format":null}
+                                                    ]
+                                                    },
+                                                    "compareMode":false,
+                                                    "compareType":"absolute",
+                                                    "enabled":true},
+                                                    "brush":{"size":0.5,"enabled":false},
+                                                    "geocoder":{"enabled":false},
+                                                    "coordinate":{"enabled":false}
+                                                    },
+                                                    "layerBlending":"normal",
+                                                    "splitMaps":[],
+                                                    "animationConfig":
+                                                    {"currentTime":null,"speed":1}
+                                                    },
+                                                    "mapState":
+                                                    {"bearing":0,
+                                                    "dragRotate":false,
+                                                    "latitude":55.0245158,
+                                                    "longitude":-1.5292151,
+                                                    "pitch":0,
+                                                    "zoom":11,
+                                                    "isSplit":false},
+                                                    "mapStyle":
+                                                    {"styleType":"dark",
+                                                    "topLayerGroups":{},
+                                                    "visibleLayerGroups":{"label":true,"road":true,"border":false,"building":true,"water":true,"land":true,"3d building":false},
+                                                    "threeDBuildingColor":[9.665468314072013,17.18305478057247,31.1442867897876],
+                                                    "mapStyles":{}
+                                                    }
+                                                    }
+                                                }
+>>>>>>> b7c6909288952d5d38a19e3f7d2fad1b1d82d941
