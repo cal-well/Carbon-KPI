@@ -13,6 +13,7 @@
                 "columns":{"lat":"LATITUDE","lng":"LONGITUDE","altitude":null},
                 "isVisible":true,
                 "visConfig":{
+                    "showLegend":true,
                     "radius":5,
                     "fixedRadius":false,
                     "opacity":0.8,
