@@ -1,5 +1,3 @@
-import streamlit as st
-
 "## Create a 3D map using Kepler.gl"
 
 import streamlit as st
