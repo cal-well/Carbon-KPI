@@ -7,15 +7,15 @@ import pandas as pd
 # Funtions to Load the data
 @st.cache_data
 def load_Housing_data():
-    in_csv = '../Data/Housing Data.csv'
-    config = '../Data/config.json'
+    in_csv = 'Data/Housing Data.csv'
+    config = 'Data/config.json'
     return in_csv, config
 in_csv, config = load_Housing_data()
 
 
 @st.cache_data
 def load_NTC_data():
-    BEIS_csv = pd.read_csv('../Data/LA_Emissions.csv')
+    BEIS_csv = pd.read_csv('Data/LA_Emissions.csv')
     BEIS_csv = pd.melt(BEIS_csv, id_vars='Calendar Year', value_vars=['Grand Total',
                               'Agriculture Total',
                               'Transport Total',
@@ -34,7 +34,7 @@ def create_housing_map(in_csv, config):
 m = create_housing_map(in_csv, config)
 
 # Define function to create the line chart
-@st.cache_resource
+@st.cache_data
 def line_chart(data, selected_lines):
     filtered_data = data[data['variable'].isin(selected_lines)]
     fig = px.line(filtered_data, x='Calendar Year', y='value', color='variable')
